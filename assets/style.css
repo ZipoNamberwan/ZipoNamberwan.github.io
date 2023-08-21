@@ -39,8 +39,60 @@ section {
     position: absolute;
 }
 
-.sec {
+.leading-section {
     position: relative;
-    padding: 100px;
-    background-color: white;
+    background-color: #1D3557;
+}
+
+.divider-section {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: #1D3557;
+}
+
+.title-section {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #F1FAEE;
+}
+
+.title-section>span {
+    color: #E63946;
+}
+
+.subtitle-section {
+    font-size: 1.5rem;
+    color: #A8DADC;
+}
+
+.quote-box {
+    background-color: #457B9D;
+    border-radius: 10px;
+}
+
+.quote {
+    color: #F1FAEE;
+    font-weight: 200;
+    font-size: 2rem;
+}
+
+.quote-box-role {
+    width: auto;
+    background-color: #457B9D;
+    border-radius: 10px;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.quote-box-role>p {
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #F1FAEE;
+}
+
+.quote-box-role>p>span {
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: #1D3557;
 }
