@@ -9,7 +9,7 @@
 
 </head>
 
-<body>
+<body onresize="responsiveFonts()">
     <section>
         <lottie-player class="layer-intro"
             src="https://lottie.host/132d5051-1f53-4edf-912b-e8856f9a68a7/0aeeEhMjre.json" background="transparent"
@@ -80,8 +80,21 @@
         </div>
     </div>
 
-    <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis unde illo neque at hic quisquam,
+    <div class="section-2 p-3">
+
+        <div class="container mt-3">
+            <div>
+                <p class="description">Menurut data Susenas 2022, persentase masyarakat Indonesia yang berada pada
+                    kategori Miskin Ekstrem
+                    mencapai 2 persen. Artinya, masih ada sekitar 5,4 juta orang. Dari jumlah tersebut, sektor yang
+                    menyumbang jumlah terbesar adalah sektor pertanian dengan jumlah 1,3 juta orang. Berikut
+                    perbandingan jumlah rumah tangga miskin ekstrem menurut sektor</p>
+            </div>
+            <div class="chart" style="position: relative; height:50vh; width:60vw">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse facilis unde illo neque at hic quisquam,
         nulla consectetur, itaque maxime sit iusto aliquam culpa reiciendis eaque recusandae vitae modi, animi
         expedita perferendis inventore. Culpa incidunt odit dicta quibusdam ullam facilis eum magnam, consectetur
         voluptates praesentium, pariatur eos nihil! Natus in, autem aut facere repellat eveniet commodi illo ullam
@@ -171,8 +184,11 @@
         eveniet ipsum nihil ipsam quam facilis, possimus modi placeat ratione soluta voluptate obcaecati error
         minima enim, fugiat quaerat architecto, iure dignissimos a eum quidem eos at fuga. Consectetur, quisquam at
         reprehenderit in exercitationem inventore incidunt dolorum quos adipisci labore? Fugiat facilis ipsum minus,
-        officiis eos modi sequi distinctio pariatur reprehenderit accusantium labore obcaecati, recusandae saepe?
+        officiis eos modi sequi distinctio pariatur reprehenderit accusantium labore obcaecati, recusandae saepe? -->
     </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.3/dist/chart.umd.min.js"></script>
 
     <script>
         let stars = document.getElementById('stars')
@@ -195,7 +211,77 @@
             foreground.style.bottom = value * -0.15 + 'px'
         })
     </script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function responsiveFonts() {
+            if (window.outerWidth > 999) {
+                Chart.defaults.font.size = 20;
+            };
+            if (window.outerWidth <= 999 && window.outerWidth > 333) {
+                Chart.defaults.font.size = 16;
+            };
+            if (window.outerWidth <= 333) {
+                Chart.defaults.font.size = 14;
+            }
+        }
+
+        responsiveFonts();
+        const ctx = document.getElementById('myChart');
+
+        // Chart.defaults.color = "#ff0000";
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Pertanian', 'Industri Pengolahan', 'Manufaktur', 'TEst', 'Test', 'Test'],
+                datasets: [{
+                    label: 'Jumlah Miskin Ekstrem',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: ['#36A2EB', '#FF6384', '#4BC0C0', '#FF9F40', '#9966FF', '#FFCD56', '#C9CBCF'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: {
+                            color: '#ffffff',
+                        },
+                        grid: {
+                            display: false,
+                        },
+                    },
+                    x: {
+                        ticks: {
+                            color: ['#36A2EB', '#FF6384', '#4BC0C0', '#FF9F40', '#9966FF', '#FFCD56', '#C9CBCF']
+                        },
+                        grid: {
+                            display: false,
+                        }
+
+                    }
+                },
+                labels: {
+                    render: 'label',
+                    fontColor: ['#36A2EB', '#FF6384', '#4BC0C0', '#FF9F40', '#9966FF', '#FFCD56', '#C9CBCF']
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Jumlah Kemiskinan Ekstrem',
+                        color: '#ffffff'
+                    },
+                    subtitle: {
+                        display: true,
+                        color: '#ffffff',
+                        text: 'Custom Chart Subtitle'
+                    }
+                }
+            }
+        });
+    </script>
 
 </body>
 

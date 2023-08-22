@@ -96,3 +96,22 @@ section {
     font-size: 1.3rem;
     color: #1D3557;
 }
+
+.section-2 {
+    background-color: #F1FAEE;
+    position: relative;
+}
+
+.chart {
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #1D3557;
+    box-shadow: 0 0 90px rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description{
+    color: #1D3557;
+    font-size: 1.2rem;
+}
