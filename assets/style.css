@@ -111,7 +111,12 @@ section {
     margin-right: auto;
 }
 
-.description{
+.description {
     color: #1D3557;
     font-size: 1.2rem;
+}
+
+.section-3 {
+    background-color: #E63946;
+    position: relative;
 }
