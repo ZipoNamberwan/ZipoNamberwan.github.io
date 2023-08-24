@@ -44,6 +44,15 @@ section {
     background-color: #1D3557;
 }
 
+.leading-section-title-0-persen {
+    /* background-color: #F1FAEE;
+    color: #1D3557;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px; */
+    font-weight: 700;
+}
+
 .divider-section {
     position: relative;
     height: 50px;
@@ -55,10 +64,6 @@ section {
     font-size: 2.5rem;
     font-weight: 500;
     color: #F1FAEE;
-}
-
-.title-section>span {
-    color: #E63946;
 }
 
 .subtitle-section {
@@ -74,7 +79,8 @@ section {
 .quote {
     color: #F1FAEE;
     font-weight: 200;
-    font-size: 2rem;
+    font-size: 1.8rem;
+    font-style: italic;
 }
 
 .quote-box-role {
@@ -100,6 +106,24 @@ section {
 .section-2 {
     background-color: #F1FAEE;
     position: relative;
+    height: 100vh;
+}
+
+.section-2-question {
+    background-color: #F1FAEE;
+    position: relative;
+    height: 100vh;
+}
+
+.section-2-question>div {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .chart {

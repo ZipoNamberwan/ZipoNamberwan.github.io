@@ -6,83 +6,111 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/style.css" rel="stylesheet">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body onresize="responsiveFonts()">
     <section>
         <lottie-player class="layer-intro"
             src="https://lottie.host/132d5051-1f53-4edf-912b-e8856f9a68a7/0aeeEhMjre.json" background="transparent"
-            speed="1" loop autoplay id="sun">
+            speed="1" loop autoplay id="sun" data-aos-anchor="#foreground" data-aos-anchor-placement="bottom-bottom"
+            data-aos-easing="ease-out" data-aos="fade-in" data-aos-delay="900" data-aos-duration="1200">
         </lottie-player>
-        <!-- <img class="layer-intro" src="assets/img/sky.png" alt="" id="sky"> -->
-        <img class="layer-intro" src="assets/img/Mountain.png" alt="" id="mountain">
-        <img class="layer-intro" src="assets/img/Layer 2.png" alt="" id="layer2">
-        <img class="layer-intro" src="assets/img/Layer 1.png" alt="" id="layer1">
+        <img class="layer-intro" src="assets/img/Mountain.png" alt="" id="mountain" data-aos-anchor="#foreground"
+            data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
+            data-aos-delay="500">
+        <img class="layer-intro" src="assets/img/Layer 2.png" alt="" id="layer2" data-aos-anchor="#foreground"
+            data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
+            data-aos-delay="300">
+        <img class="layer-intro" src="assets/img/Layer 1.png" alt="" id="layer1" data-aos-anchor="#foreground"
+            data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
+            data-aos-delay="300">
         <lottie-player class="layer-intro"
             src="https://lottie.host/222ef5cc-e87d-4f00-93a9-699cf46f99a7/AJXm1FnhC8.json" background="transparent"
-            speed="1" loop autoplay id="house">
+            speed="1" loop autoplay id="house" data-aos-anchor="#foreground" data-aos-anchor-placement="bottom-bottom"
+            data-aos-easing="ease-out" data-aos="slide-up" data-aos-delay="300">
         </lottie-player>
-        <img class="layer-intro" src="assets/img/Bush.png" alt="" id="bush">
-        <img class="layer-intro" src="assets/img/People.png" alt="" id="foreground">
+        <img class="layer-intro" src="assets/img/Bush.png" alt="" id="bush" data-aos-anchor="#foreground"
+            data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
+            data-aos-delay="100">
+        <img class="layer-intro" src="assets/img/People.png" alt="" id="foreground" data-aos-easing="ease-out"
+            data-aos-duration="1300" data-aos-anchor-placement="bottom-bottom">
         <lottie-player class="title-animation"
             src="https://lottie.host/5f11a04e-f72f-43c0-8f08-81b371dc4e9d/t7G7F6Toev.json" background="transparent"
-            speed="1" loop autoplay id="house">
+            speed="1" loop autoplay id="house" data-aos-anchor="#foreground" data-aos-anchor-placement="bottom-bottom"
+            data-aos-easing="ease-out" data-aos="zoom-out" data-aos-delay="1200" data-aos-duration="1500">
         </lottie-player>
     </section>
 
     <div class="divider-section">
     </div>
-    <div class="leading-section pt-5">
-        <div class="container">
-            <div>
-                <h2 class="title-section">Harapan Nol Persen <span>Kemiskinan Ekstrem</span> di 2024</h2>
+    <div class="leading-section pt-4">
+        <div class="container test">
+            <div data-aos-anchor-placement="bottom-bottom" data-aos-easing="easy-in-out" data-aos="fade-up"
+                data-aos-duration="1200" id="leading-section-title" class="mb-4">
+                <h2 class="title-section">Harapan <span class="leading-section-title-0-persen">Nol Persen</span> <span
+                        style="font-weight: 700;color: #E63946;">Kemiskinan
+                        Ekstrem</span> di 2024</h2>
             </div>
-            <p class="subtitle-section"> Pada Rapat Kerja Nasional III PDIP, Presiden Joko Widodo mengungkapkan mimpinya
+            <p class="subtitle-section" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom"
+                data-aos-easing="easy-in-out" data-aos="fade-up" data-aos-duration="1200"
+                data-aos-anchor="#leading-section-title"> Pada Rapat Kerja Nasional III PDIP,
+                Presiden Joko Widodo
+                mengungkapkan mimpinya
                 untuk menghapuskan
                 kemiskinan ekstrem pada 2024
             </p>
 
             <div class="row justify-content-center align-items-end">
                 <div class="col-lg-8 col-12">
-                    <div class="quote-box pt-3 pb-5 px-4">
+                    <div class="quote-box pt-3 pb-5 px-4 mt-3" id="quote-box" data-aos-anchor-placement="bottom-bottom"
+                        data-aos-easing="easy-in-out" data-aos="fade-right" data-aos-duration="1200">
                         <div class="row justify-content-start">
                             <div class="col-2">
                                 <img width="80%" src="assets/img/Quote Icon.png" alt="">
                             </div>
                             <div class="col-10">
-                                <div>
+                                <div class="mb-3">
                                     <img width="30%" src="assets/img/Line-Acc.png" alt="">
                                 </div>
                                 <p class="quote">Berkaitan dengan kemiskinan ekstrem ini kita sudah rencanakan di
-                                    periode
-                                    ke-2
-                                    ini, di 2024
-                                    itu
-                                    kita
-                                    berada pada posisi 0, tapi kita sempat terkendala Covid-19 hampir 2,5 tahun. Tapi
-                                    saya
-                                    masih
-                                    meyakini 2024 itu akan turun drastis
+                                    periode ke-2 ini, di <span style="font-weight: 700;">2024</span>
+                                    itu kita berada pada <span style="font-weight: 700;">posisi 0</span>, tapi kita
+                                    sempat terkendala Covid-19 hampir 2,5 tahun. Tapi saya masih meyakini 2024 itu akan
+                                    <span style="font-weight: 700;">turun drastis</span>
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="quote-box-role px-3 py-3 mt-3 mb-3">
-                        <p>Joko Widodo - <span>Presiden Republik Indonesia</span></p>
+                    <div class="quote-box-role px-3 py-3 mt-4 mb-4" data-aos-anchor="#quote-box"
+                        data-aos-duration="1200" data-aos-easing="easy-in-out" data-aos="fade-right"
+                        data-aos-anchor-placement="bottom-bottom">
+                        <p style="font-weight: 600;" class="m-0">Joko Widodo - <span>Presiden Republik Indonesia</span>
+                        </p>
                     </div>
                 </div>
                 <!-- <div class="col-lg-2"></div> -->
-                <div class="col-lg-4 col-6">
+                <div class="col-lg-4 col-6" data-aos-easing="easy-in-out" data-aos="zoom-in"
+                    data-aos-anchor-placement="bottom-bottom" data-aos-anchor="#quote-box" data-aos-duration="1200"
+                    data-aos-delay="300">
                     <img width="100%" height="auto" src="assets/img/Jokowi.png" alt="">
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="section-2-question">
+        <div class="container pt-4 pb-4">
+            <h1 class="text-center">Target dan harapan Pak Jokowi sudah jelas</h1>
+            <h1 class="text-center">Lantas, bagaimana gambaran kemiskinan ekstrem khususnya pada sektor pertanian saat
+                ini?</h1>
+        </div>
+    </div>
+
     <div class="section-2 p-3">
         <div class="container mt-3">
             <div>
+                <h2>Gambaran Kemiskinan Pada Petani</h2>
                 <p class="description">Menurut data Susenas 2022, persentase masyarakat Indonesia yang berada pada
                     kategori Miskin Ekstrem
                     mencapai 2 persen. Artinya, masih ada sekitar 5,4 juta orang. Dari jumlah tersebut, sektor yang
@@ -144,6 +172,10 @@
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.3/dist/chart.umd.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script>
         let stars = document.getElementById('stars')
