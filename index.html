@@ -7,174 +7,266 @@
     <link href="assets/style.css" rel="stylesheet">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
 </head>
 
 <body onresize="responsiveFonts()">
-    <section>
-        <lottie-player class="layer-intro"
-            src="https://lottie.host/132d5051-1f53-4edf-912b-e8856f9a68a7/0aeeEhMjre.json" background="transparent"
-            speed="1" loop autoplay id="sun" data-aos-anchor="#foreground" data-aos-anchor-placement="bottom-bottom"
-            data-aos-easing="ease-out" data-aos="fade-in" data-aos-delay="900" data-aos-duration="1200">
-        </lottie-player>
-        <img class="layer-intro" src="assets/img/Mountain.png" alt="" id="mountain" data-aos-anchor="#foreground"
-            data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
-            data-aos-delay="500">
-        <img class="layer-intro" src="assets/img/Layer 2.png" alt="" id="layer2" data-aos-anchor="#foreground"
-            data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
-            data-aos-delay="300">
-        <img class="layer-intro" src="assets/img/Layer 1.png" alt="" id="layer1" data-aos-anchor="#foreground"
-            data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
-            data-aos-delay="300">
-        <lottie-player class="layer-intro"
-            src="https://lottie.host/222ef5cc-e87d-4f00-93a9-699cf46f99a7/AJXm1FnhC8.json" background="transparent"
-            speed="1" loop autoplay id="house" data-aos-anchor="#foreground" data-aos-anchor-placement="bottom-bottom"
-            data-aos-easing="ease-out" data-aos="slide-up" data-aos-delay="300">
-        </lottie-player>
-        <img class="layer-intro" src="assets/img/Bush.png" alt="" id="bush" data-aos-anchor="#foreground"
-            data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
-            data-aos-delay="100">
-        <img class="layer-intro" src="assets/img/People.png" alt="" id="foreground" data-aos-easing="ease-out"
-            data-aos-duration="1300" data-aos-anchor-placement="bottom-bottom">
-        <lottie-player class="title-animation"
-            src="https://lottie.host/5f11a04e-f72f-43c0-8f08-81b371dc4e9d/t7G7F6Toev.json" background="transparent"
-            speed="1" loop autoplay id="house" data-aos-anchor="#foreground" data-aos-anchor-placement="bottom-bottom"
-            data-aos-easing="ease-out" data-aos="zoom-out" data-aos-delay="1200" data-aos-duration="1500">
-        </lottie-player>
-    </section>
 
-    <div class="divider-section">
-    </div>
-    <div class="leading-section pt-4">
-        <div class="container test">
-            <div data-aos-anchor-placement="bottom-bottom" data-aos-easing="easy-in-out" data-aos="fade-up"
-                data-aos-duration="1200" id="leading-section-title" class="mb-4">
-                <h2 class="title-section">Harapan <span class="leading-section-title-0-persen">Nol Persen</span> <span
-                        style="font-weight: 700;color: #E63946;">Kemiskinan
-                        Ekstrem</span> di 2024</h2>
-            </div>
-            <p class="subtitle-section" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom"
-                data-aos-easing="easy-in-out" data-aos="fade-up" data-aos-duration="1200"
-                data-aos-anchor="#leading-section-title"> Pada Rapat Kerja Nasional III PDIP,
-                Presiden Joko Widodo
-                mengungkapkan mimpinya
-                untuk menghapuskan
-                kemiskinan ekstrem pada 2024
-            </p>
+    <div class="wrapper">
+        <div class="intro-page">
+            <lottie-player class="layer-intro"
+                src="https://lottie.host/132d5051-1f53-4edf-912b-e8856f9a68a7/0aeeEhMjre.json" background="transparent"
+                speed="1" loop autoplay id="sun" data-aos-anchor="#foreground" data-aos-anchor-placement="bottom-bottom"
+                data-aos-easing="ease-out" data-aos="fade-in" data-aos-delay="900" data-aos-duration="1200">
+            </lottie-player>
+            <img class="layer-intro" src="assets/img/Mountain.png" alt="" id="mountain" data-aos-anchor="#foreground"
+                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
+                data-aos-delay="500">
+            <img class="layer-intro" src="assets/img/Layer 2.png" alt="" id="layer2" data-aos-anchor="#foreground"
+                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
+                data-aos-delay="300">
+            <img class="layer-intro" src="assets/img/Layer 1.png" alt="" id="layer1" data-aos-anchor="#foreground"
+                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
+                data-aos-delay="300">
+            <lottie-player class="layer-intro"
+                src="https://lottie.host/222ef5cc-e87d-4f00-93a9-699cf46f99a7/AJXm1FnhC8.json" background="transparent"
+                speed="1" loop autoplay id="house" data-aos-anchor="#foreground"
+                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
+                data-aos-delay="300">
+            </lottie-player>
+            <img class="layer-intro" src="assets/img/Bush.png" alt="" id="bush" data-aos-anchor="#foreground"
+                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
+                data-aos-delay="100">
+            <img class="layer-intro" src="assets/img/People.png" alt="" id="foreground" data-aos-easing="ease-out"
+                data-aos-duration="1300" data-aos-anchor-placement="bottom-bottom">
+            <lottie-player class="title-animation"
+                src="https://lottie.host/5f11a04e-f72f-43c0-8f08-81b371dc4e9d/t7G7F6Toev.json" background="transparent"
+                speed="1" loop autoplay id="house" data-aos-anchor="#foreground"
+                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="zoom-out"
+                data-aos-delay="1200" data-aos-duration="1500">
+            </lottie-player>
+        </div>
 
-            <div class="row justify-content-center align-items-end">
-                <div class="col-lg-8 col-12">
-                    <div class="quote-box pt-3 pb-5 px-4 mt-3" id="quote-box" data-aos-anchor-placement="bottom-bottom"
-                        data-aos-easing="easy-in-out" data-aos="fade-right" data-aos-duration="1200">
-                        <div class="row justify-content-start">
-                            <div class="col-2">
-                                <img width="80%" src="assets/img/Quote Icon.png" alt="">
-                            </div>
-                            <div class="col-10">
-                                <div class="mb-3">
-                                    <img width="30%" src="assets/img/Line-Acc.png" alt="">
+        <div class="divider-section">
+        </div>
+        <div class="leading-section pt-4">
+            <div class="container">
+                <div data-aos-anchor-placement="bottom-bottom" data-aos-easing="easy-in-out" data-aos="fade-up"
+                    data-aos-duration="1200" id="leading-section-title" class="mb-4">
+                    <h2 class="title-section">Harapan <span class="leading-section-title-0-persen">Nol Persen</span>
+                        <span style="font-weight: 700;color: #E63946;">Kemiskinan
+                            Ekstrem</span> di 2024
+                    </h2>
+                </div>
+                <p class="subtitle-section" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom"
+                    data-aos-easing="easy-in-out" data-aos="fade-up" data-aos-duration="1200"
+                    data-aos-anchor="#leading-section-title"> Pada Rapat Kerja Nasional III PDIP,
+                    Presiden Joko Widodo
+                    mengungkapkan mimpinya
+                    untuk menghapuskan
+                    kemiskinan ekstrem pada 2024
+                </p>
+
+                <div class="row justify-content-center align-items-end">
+                    <div class="col-lg-8 col-12">
+                        <div class="quote-box pt-3 pb-5 px-4 mt-3" id="quote-box"
+                            data-aos-anchor-placement="bottom-bottom" data-aos-easing="easy-in-out"
+                            data-aos="fade-right" data-aos-duration="1200">
+                            <div class="row justify-content-start">
+                                <div class="col-2">
+                                    <img width="80%" src="assets/img/Quote Icon.png" alt="">
                                 </div>
-                                <p class="quote">Berkaitan dengan kemiskinan ekstrem ini kita sudah rencanakan di
-                                    periode ke-2 ini, di <span style="font-weight: 700;">2024</span>
-                                    itu kita berada pada <span style="font-weight: 700;">posisi 0</span>, tapi kita
-                                    sempat terkendala Covid-19 hampir 2,5 tahun. Tapi saya masih meyakini 2024 itu akan
-                                    <span style="font-weight: 700;">turun drastis</span>
-                                </p>
+                                <div class="col-10">
+                                    <div class="mb-3">
+                                        <img width="30%" src="assets/img/Line-Acc.png" alt="">
+                                    </div>
+                                    <p class="quote">Berkaitan dengan kemiskinan ekstrem ini kita sudah rencanakan di
+                                        periode ke-2 ini, di <span style="font-weight: 700;">2024</span>
+                                        itu kita berada pada <span style="font-weight: 700;">posisi 0</span>, tapi kita
+                                        sempat terkendala Covid-19 hampir 2,5 tahun. Tapi saya masih meyakini 2024 itu
+                                        akan
+                                        <span style="font-weight: 700;">turun drastis</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
+                        <div class="quote-box-role px-3 py-3 mt-4 mb-4" data-aos-anchor="#quote-box"
+                            data-aos-duration="1200" data-aos-easing="easy-in-out" data-aos="fade-right"
+                            data-aos-anchor-placement="bottom-bottom">
+                            <p style="font-weight: 600;" class="m-0">Joko Widodo - <span>Presiden Republik
+                                    Indonesia</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="quote-box-role px-3 py-3 mt-4 mb-4" data-aos-anchor="#quote-box"
-                        data-aos-duration="1200" data-aos-easing="easy-in-out" data-aos="fade-right"
-                        data-aos-anchor-placement="bottom-bottom">
-                        <p style="font-weight: 600;" class="m-0">Joko Widodo - <span>Presiden Republik Indonesia</span>
-                        </p>
+                    <!-- <div class="col-lg-2"></div> -->
+                    <div class="col-lg-4 col-6" data-aos-easing="easy-in-out" data-aos="zoom-in"
+                        data-aos-anchor-placement="bottom-bottom" data-aos-anchor="#quote-box" data-aos-duration="1200"
+                        data-aos-delay="300">
+                        <img width="100%" height="auto" src="assets/img/Jokowi.png" alt="">
                     </div>
                 </div>
-                <!-- <div class="col-lg-2"></div> -->
-                <div class="col-lg-4 col-6" data-aos-easing="easy-in-out" data-aos="zoom-in"
-                    data-aos-anchor-placement="bottom-bottom" data-aos-anchor="#quote-box" data-aos-duration="1200"
-                    data-aos-delay="300">
-                    <img width="100%" height="auto" src="assets/img/Jokowi.png" alt="">
+                <div class="row mt-3">
+                    <div class="col">
+                        <p class="description-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                            id
+                            maximus nulla, at dapibus
+                            metus. Aliquam vitae justo condimentum, dapibus mi venenatis, sagittis ligula. Donec
+                            lobortis feugiat tortor, quis malesuada mi. Aliquam consequat faucibus quam at lacinia.
+                            Fusce eu velit vel magna tempor condimentum finibus vel mi. Morbi eget dolor enim. Mauris
+                            fringilla purus quis urna egestas mollis sed eu dolor. Maecenas scelerisque nunc eget enim
+                            tincidunt, iaculis aliquam lorem faucibus. Nunc eu rhoncus lacus, sit amet consectetur nunc.
+                            Sed pharetra mollis arcu, nec feugiat nisl auctor at.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="section-2-question">
-        <div class="container pt-4 pb-4">
-            <h1 class="text-center">Target dan harapan Pak Jokowi sudah jelas</h1>
-            <h1 class="text-center">Lantas, bagaimana gambaran kemiskinan ekstrem khususnya pada sektor pertanian saat
-                ini?</h1>
-        </div>
-    </div>
-
-    <div class="section-2 p-3">
-        <div class="container mt-3">
-            <div>
-                <h2>Gambaran Kemiskinan Pada Petani</h2>
-                <p class="description">Menurut data Susenas 2022, persentase masyarakat Indonesia yang berada pada
-                    kategori Miskin Ekstrem
-                    mencapai 2 persen. Artinya, masih ada sekitar 5,4 juta orang. Dari jumlah tersebut, sektor yang
-                    menyumbang jumlah terbesar adalah sektor pertanian dengan jumlah 1,3 juta orang. Berikut
-                    perbandingan jumlah rumah tangga miskin ekstrem menurut sektor</p>
-            </div>
-            <div class="chart" style="position: relative; height:50vh; width:60vw">
-                <canvas id="myChart"></canvas>
-            </div>
-            <div>
-                <p class="description">Hal ini membuat sektor pertanian menjadi sektor yang paling rentan masuk ke dalam
-                    jebakan miskin ekstrem</p>
+        <div class="section-2-question">
+            <div class="box"></div>
+            <div class="container">
+                <h1 class="text-center" id="hook-question">Target dan harapan <span class="question-span-1">Pak
+                        Jokowi</span> sudah jelas <br />Lantas, bagaimana gambaran <span
+                        class="question-span-2">kemiskinan ekstrem</span> khususnya pada <span
+                        class="question-span-1">sektor pertanian</span>
+                    saat ini?
+                </h1>
             </div>
         </div>
-    </div>
 
-    <div class="section-3">
-        <img src="assets/img/Divider 1.png" width="100%" alt="">
-        <div class="container mt-3">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend vestibulum orci, vitae
-                pellentesque magna mollis at. Aenean finibus dui quis ipsum commodo, vitae malesuada massa venenatis.
-                Pellentesque lobortis dolor interdum neque tempor vestibulum. Aenean sodales, orci eu semper semper,
-                turpis erat rutrum ligula, sit amet suscipit lacus quam at lectus. Proin vehicula varius tempus.
-                Curabitur pharetra tortor a purus pulvinar euismod. Suspendisse purus ante, condimentum vitae leo ut,
-                finibus condimentum elit. Suspendisse potenti.
+        <div class="section-2 p-3">
+            <div class="container mt-3">
+                <div>
+                    <h2>Gambaran Kemiskinan Pada Petani</h2>
+                    <p class="description">Menurut data Susenas 2022, persentase masyarakat Indonesia yang berada pada
+                        kategori Miskin Ekstrem
+                        mencapai 2 persen. Artinya, masih ada sekitar 5,4 juta orang. Dari jumlah tersebut, sektor yang
+                        menyumbang jumlah terbesar adalah sektor pertanian dengan jumlah 1,3 juta orang. Berikut
+                        perbandingan jumlah rumah tangga miskin ekstrem menurut sektor</p>
+                </div>
+                <div class="chart" style="position: relative; height:50vh; width:60vw">
+                    <canvas id="myChart"></canvas>
+                </div>
+                <div>
+                    <p class="description">Hal ini membuat sektor pertanian menjadi sektor yang paling rentan masuk ke
+                        dalam
+                        jebakan miskin ekstrem</p>
+                </div>
+            </div>
+        </div>
 
-                Quisque lorem dolor, laoreet in nisl in, maximus bibendum ipsum. Etiam eget felis diam. Ut in eros
-                lectus. Ut a ullamcorper enim. Phasellus tempor enim aliquam libero interdum, id volutpat nisi auctor.
-                Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent vel sapien fermentum, finibus
-                purus sit amet, rhoncus sapien. Quisque pharetra elementum est. Maecenas eget felis in metus efficitur
-                dignissim tempus eget arcu. Aenean eget sem pellentesque tellus blandit aliquam vel a libero. In nunc
-                lorem, vestibulum et est id, scelerisque lacinia mauris. Praesent tempus libero metus, in tempor justo
-                consequat sed. Sed pretium mi orci. Curabitur tortor eros, vulputate ac scelerisque a, blandit facilisis
-                orci. Morbi at dapibus enim. Aliquam erat volutpat.
+        <div class="section-3">
+            <img src="assets/img/Divider 1.png" width="100%" alt="">
+            <div class="container mt-3">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend vestibulum orci, vitae
+                    pellentesque magna mollis at. Aenean finibus dui quis ipsum commodo, vitae malesuada massa
+                    venenatis.
+                    Pellentesque lobortis dolor interdum neque tempor vestibulum. Aenean sodales, orci eu semper semper,
+                    turpis erat rutrum ligula, sit amet suscipit lacus quam at lectus. Proin vehicula varius tempus.
+                    Curabitur pharetra tortor a purus pulvinar euismod. Suspendisse purus ante, condimentum vitae leo
+                    ut,
+                    finibus condimentum elit. Suspendisse potenti.
 
-                In consequat gravida risus, eu bibendum orci egestas id. Praesent vehicula ac nunc in ornare. Donec id
-                urna pulvinar urna laoreet tempus. Pellentesque laoreet risus magna, sed sagittis turpis malesuada nec.
-                Etiam eget blandit risus, vel ultrices lacus. Morbi id massa a sem malesuada dapibus in fringilla felis.
-                Mauris in viverra turpis. Pellentesque imperdiet arcu eu pulvinar pellentesque. Integer ut dapibus odio.
+                    Quisque lorem dolor, laoreet in nisl in, maximus bibendum ipsum. Etiam eget felis diam. Ut in eros
+                    lectus. Ut a ullamcorper enim. Phasellus tempor enim aliquam libero interdum, id volutpat nisi
+                    auctor.
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent vel sapien fermentum, finibus
+                    purus sit amet, rhoncus sapien. Quisque pharetra elementum est. Maecenas eget felis in metus
+                    efficitur
+                    dignissim tempus eget arcu. Aenean eget sem pellentesque tellus blandit aliquam vel a libero. In
+                    nunc
+                    lorem, vestibulum et est id, scelerisque lacinia mauris. Praesent tempus libero metus, in tempor
+                    justo
+                    consequat sed. Sed pretium mi orci. Curabitur tortor eros, vulputate ac scelerisque a, blandit
+                    facilisis
+                    orci. Morbi at dapibus enim. Aliquam erat volutpat.
 
-                Vestibulum est nisl, gravida in egestas sit amet, posuere a tortor. Pellentesque volutpat libero ac
-                tincidunt ornare. Phasellus at mauris metus. Integer lorem enim, gravida ornare ligula id, imperdiet
-                porttitor justo. Aliquam facilisis egestas sapien, scelerisque volutpat elit viverra sit amet. Mauris
-                dignissim quam in erat pellentesque tincidunt. Pellentesque habitant morbi tristique senectus et netus
-                et malesuada fames ac turpis egestas. Fusce vel dui accumsan, condimentum dui non, luctus velit. Nullam
-                laoreet gravida magna et mollis. Phasellus in ante sed velit sodales faucibus non nec dolor. Fusce
-                dignissim ante vel euismod sodales. Aenean consequat mauris a facilisis iaculis. In porttitor viverra
-                felis, ac viverra ex.
+                    In consequat gravida risus, eu bibendum orci egestas id. Praesent vehicula ac nunc in ornare. Donec
+                    id
+                    urna pulvinar urna laoreet tempus. Pellentesque laoreet risus magna, sed sagittis turpis malesuada
+                    nec.
+                    Etiam eget blandit risus, vel ultrices lacus. Morbi id massa a sem malesuada dapibus in fringilla
+                    felis.
+                    Mauris in viverra turpis. Pellentesque imperdiet arcu eu pulvinar pellentesque. Integer ut dapibus
+                    odio.
 
-                Proin ut libero aliquam, convallis odio ac, interdum ante. In vel mauris nulla. Phasellus sit amet
-                sapien nisl. Pellentesque metus lacus, viverra et augue ut, accumsan mattis enim. Fusce maximus auctor
-                urna, ac imperdiet ex imperdiet quis. Donec consequat luctus mattis. Nullam vulputate fermentum mauris
-                sed fringilla. Ut eu velit tellus. Suspendisse ipsum libero, ullamcorper et lectus non, efficitur semper
-                neque. Morbi sapien erat, vehicula faucibus consectetur eu, mollis et sapien. Duis sit amet libero
-                ligula. Etiam interdum luctus elit, id interdum velit iaculis blandit. Proin pellentesque magna arcu, eu
-                iaculis lacus porta posuere. Curabitur iaculis viverra lorem, id auctor dui ultricies at.</p>
+                    Vestibulum est nisl, gravida in egestas sit amet, posuere a tortor. Pellentesque volutpat libero ac
+                    tincidunt ornare. Phasellus at mauris metus. Integer lorem enim, gravida ornare ligula id, imperdiet
+                    porttitor justo. Aliquam facilisis egestas sapien, scelerisque volutpat elit viverra sit amet.
+                    Mauris
+                    dignissim quam in erat pellentesque tincidunt. Pellentesque habitant morbi tristique senectus et
+                    netus
+                    et malesuada fames ac turpis egestas. Fusce vel dui accumsan, condimentum dui non, luctus velit.
+                    Nullam
+                    laoreet gravida magna et mollis. Phasellus in ante sed velit sodales faucibus non nec dolor. Fusce
+                    dignissim ante vel euismod sodales. Aenean consequat mauris a facilisis iaculis. In porttitor
+                    viverra
+                    felis, ac viverra ex.
+
+                    Proin ut libero aliquam, convallis odio ac, interdum ante. In vel mauris nulla. Phasellus sit amet
+                    sapien nisl. Pellentesque metus lacus, viverra et augue ut, accumsan mattis enim. Fusce maximus
+                    auctor
+                    urna, ac imperdiet ex imperdiet quis. Donec consequat luctus mattis. Nullam vulputate fermentum
+                    mauris
+                    sed fringilla. Ut eu velit tellus. Suspendisse ipsum libero, ullamcorper et lectus non, efficitur
+                    semper
+                    neque. Morbi sapien erat, vehicula faucibus consectetur eu, mollis et sapien. Duis sit amet libero
+                    ligula. Etiam interdum luctus elit, id interdum velit iaculis blandit. Proin pellentesque magna
+                    arcu, eu
+                    iaculis lacus porta posuere. Curabitur iaculis viverra lorem, id auctor dui ultricies at.</p>
+            </div>
         </div>
     </div>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.3.3/dist/chart.umd.min.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <script>
         AOS.init();
+    </script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        var duration = 10;
+        var splitQuestion = new SplitType("#hook-question", { type: "words" });
+        var tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".word",
+                start: "center center",
+                scrub: 1,
+            },
+            duration: duration
+        });
+
+        splitQuestion.words.forEach((word, i) => {
+            if (i == 4 || i == 3 || i == 14 || i == 15) {
+                tl.fromTo(word, { opacity: 0, duration: 1, paddingLeft: '10px', paddingRight: '10px', borderRadius: '10px' },
+                    { opacity: 1, duration: 1, backgroundColor: '#1D3557', color: '#E0FDFF' });
+            } else {
+                tl.from(word, {
+                    opacity: 0, duration: 1, backgroundColor: "#1D3557"
+                });
+            }
+        });
+
+        gsap.from(
+            '.box',
+            {
+                scrollTrigger: {
+                    trigger: ".box",
+                    start: "top top",
+                    scrub: 1,
+                    pin: '.section-2-question',
+                },
+                opacity: 0, duration: duration, stagger: 0.5
+            },
+        )
+
     </script>
 
     <script>
