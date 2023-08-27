@@ -196,6 +196,46 @@ body {
     height: 100vh;
 }
 
+.circle-red {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #E63946;
+}
+
+.circle-white-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #F1FAEE;
+}
+
+.circle-dark-blue {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #1D3557;
+}
+
+.circle-white {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #E0FDFF;
+}
+
+.circle-light-blue {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #457B9D;
+}
+
 .question-span-1 {
     font-weight: 900;
     /* color: #E0FDFF;
@@ -222,6 +262,12 @@ body {
 .description {
     color: #1D3557;
     font-size: 1.2rem;
+}
+
+.section-3 {
+    background-color: #E0FDFF;
+    position: absolute;
+    top: 0;
 }
 
 .section-3 {
