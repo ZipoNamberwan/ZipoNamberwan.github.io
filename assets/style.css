@@ -117,7 +117,7 @@ body {
 .section-2 {
     background-color: #F1FAEE;
     position: relative;
-    height: 100vh;
+    height: auto;
 }
 
 .section-2-question {
@@ -126,17 +126,6 @@ body {
     height: 100vh;
     top: 0;
 
-    /* background-image: url("img/Background\ Poverty.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover; */
-
-}
-
-.box {
-    width: 150px;
-    height: 100vh;
 }
 
 .section-2-question>.container {
@@ -151,6 +140,60 @@ body {
 
     font-size: 5rem;
     color: #1D3557;
+}
+
+.section-2-background {
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-2 {
+    width: 150px;
+    height: 100vh;
+}
+
+.section-5 {
+    background-color: #F1FAEE;
+    position: relative;
+    height: auto;
+}
+
+.section-5-question {
+    background-color: #E0FDFF;
+    position: relative;
+    height: 100vh;
+    top: 0;
+
+}
+
+.section-5-question>.container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-5-question>div>h1 {
+
+    font-size: 5rem;
+    color: #1D3557;
+}
+
+.section-5-background {
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-5 {
+    width: 150px;
+    height: 100vh;
 }
 
 .question-span-1 {
@@ -182,14 +225,6 @@ body {
 }
 
 .section-3 {
-    background-color: #E63946;
+    background-color: #E0FDFF;
     position: relative;
-}
-
-.section-2-background {
-    position: absolute;
-    top: 0;
-    height: auto;
-    width: 100%;
-    object-fit: cover;
 }
