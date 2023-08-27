@@ -52,16 +52,13 @@
         </div>
         <div class="leading-section pt-4">
             <div class="container">
-                <div data-aos-anchor-placement="bottom-bottom" data-aos-easing="easy-in-out" data-aos="fade-up"
-                    data-aos-duration="1200" id="leading-section-title" class="mb-4">
+                <div id="leading-section-title" class="mb-4">
                     <h2 class="title-section">Harapan <span class="leading-section-title-0-persen">Nol Persen</span>
                         <span style="font-weight: 700;color: #E63946;">Kemiskinan
                             Ekstrem</span> di 2024
                     </h2>
                 </div>
-                <p class="subtitle-section" data-aos-delay="300" data-aos-anchor-placement="bottom-bottom"
-                    data-aos-easing="easy-in-out" data-aos="fade-up" data-aos-duration="1200"
-                    data-aos-anchor="#leading-section-title"> Pada Rapat Kerja Nasional III PDIP,
+                <p class="leading-section-subtitle"> Pada Rapat Kerja Nasional III PDIP,
                     Presiden Joko Widodo
                     mengungkapkan mimpinya
                     untuk menghapuskan
@@ -70,9 +67,7 @@
 
                 <div class="row justify-content-center align-items-end">
                     <div class="col-lg-8 col-12">
-                        <div class="quote-box pt-3 pb-5 px-4 mt-3" id="quote-box"
-                            data-aos-anchor-placement="bottom-bottom" data-aos-easing="easy-in-out"
-                            data-aos="fade-right" data-aos-duration="1200">
+                        <div class="quote-box pt-3 pb-5 px-4 mt-3" id="quote-box">
                             <div class="row justify-content-start">
                                 <div class="col-2">
                                     <img width="80%" src="assets/img/Quote Icon.png" alt="">
@@ -91,24 +86,21 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="quote-box-role px-3 py-3 mt-4 mb-4" data-aos-anchor="#quote-box"
-                            data-aos-duration="1200" data-aos-easing="easy-in-out" data-aos="fade-right"
-                            data-aos-anchor-placement="bottom-bottom">
+                        <div class="quote-box-role px-3 py-3 mt-4 mb-4">
                             <p style="font-weight: 600;" class="m-0">Joko Widodo - <span>Presiden Republik
                                     Indonesia</span>
                             </p>
                         </div>
                     </div>
                     <!-- <div class="col-lg-2"></div> -->
-                    <div class="col-lg-4 col-6" data-aos-easing="easy-in-out" data-aos="zoom-in"
-                        data-aos-anchor-placement="bottom-bottom" data-aos-anchor="#quote-box" data-aos-duration="1200"
-                        data-aos-delay="300">
+                    <div class="quote-img col-lg-4 col-6">
                         <img width="100%" height="auto" src="assets/img/Jokowi.png" alt="">
                     </div>
                 </div>
                 <div class="row mt-3">
                     <div class="col">
-                        <p class="description-section">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                        <p class="leading-section-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nullam
                             id
                             maximus nulla, at dapibus
                             metus. Aliquam vitae justo condimentum, dapibus mi venenatis, sagittis ligula. Donec
@@ -231,6 +223,38 @@
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
+
+        var tl = gsap.timeline({
+            scrollTrigger: { trigger: '#leading-section-title', start: 'top 95%', end: 'top 95%', toggleActions: 'play none reverse none' },
+            duration: 0.5
+        });
+
+        tl.from('#leading-section-title', {
+            y: '50px', opacity: 0, ease: 'power1.out',
+        });
+        tl.from('.leading-section-subtitle', {
+            y: '50px', opacity: 0, ease: 'power1.out',
+        }, ">-=0.2");
+
+        var tl = gsap.timeline({
+            scrollTrigger: { trigger: '.quote-box', start: 'top 60%', end: 'top 60%', toggleActions: 'play none reverse none' },
+            duration: 0.5
+        });
+        tl.from('.quote-box', {
+            x: '-50px', opacity: 0
+        });
+        tl.from('.quote-img', {
+            scale: 0, opacity: 0
+        }, '<');
+        tl.from('.quote-box-role', {
+            x: '-50px', opacity: 0
+        }, ">-=0.3");
+
+        gsap.from('.leading-section-description', {
+            scrollTrigger: { trigger: '.leading-section-description', start: 'top 60%', end: 'top 60%', toggleActions: 'play none reverse none' },
+            duration: 0.5,
+            x: '-50px', opacity: 0
+        },);
 
         var duration = 10;
         var splitQuestion = new SplitType("#hook-question", { type: "words" });
