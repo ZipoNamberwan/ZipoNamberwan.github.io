@@ -116,6 +116,10 @@
 
         <div class="section-2-question">
             <div class="box"></div>
+            <lottie-player class="section-2-background"
+                src="https://lottie.host/298094d2-f7dc-4edc-baa5-0e227217b3ee/ZkowkgqNeJ.json" background="transparent"
+                speed="2" loop autoplay>
+            </lottie-player>
             <div class="container">
                 <h1 class="text-center" id="hook-question">Target dan harapan <span class="question-span-1">Pak
                         Jokowi</span> sudah jelas <br />Lantas, bagaimana gambaran <span
@@ -266,6 +270,11 @@
             },
             duration: duration
         });
+
+        tl.from(".section-2-background", { opacity: 0, duration: 5 });
+
+        tl.fromTo("#hook-question", { opacity: 0, duration: 1, padding: '20px', borderRadius: '15px', backgroundColor: 'transparent' },
+            { opacity: 1, duration: 5, backgroundColor: '#FFFFFF' });
 
         splitQuestion.words.forEach((word, i) => {
             if (i == 4 || i == 3 || i == 14 || i == 15) {
