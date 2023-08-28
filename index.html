@@ -17,34 +17,20 @@
         <div class="intro-page">
             <lottie-player class="layer-intro"
                 src="https://lottie.host/132d5051-1f53-4edf-912b-e8856f9a68a7/0aeeEhMjre.json" background="transparent"
-                speed="1" loop autoplay id="sun" data-aos-anchor="#foreground" data-aos-anchor-placement="bottom-bottom"
-                data-aos-easing="ease-out" data-aos="fade-in" data-aos-delay="900" data-aos-duration="1200">
+                speed="1" loop autoplay id="sun">
             </lottie-player>
-            <img class="layer-intro" src="assets/img/Mountain.png" alt="" id="mountain" data-aos-anchor="#foreground"
-                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
-                data-aos-delay="500">
-            <img class="layer-intro" src="assets/img/Layer 2.png" alt="" id="layer2" data-aos-anchor="#foreground"
-                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
-                data-aos-delay="300">
-            <img class="layer-intro" src="assets/img/Layer 1.png" alt="" id="layer1" data-aos-anchor="#foreground"
-                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
-                data-aos-delay="300">
+            <img class="layer-intro" src="assets/img/Mountain.png" alt="" id="mountain">
+            <img class="layer-intro" src="assets/img/Layer 2.png" alt="" id="layer2">
+            <img class="layer-intro" src="assets/img/Layer 1.png" alt="" id="layer1">
             <lottie-player class="layer-intro"
                 src="https://lottie.host/222ef5cc-e87d-4f00-93a9-699cf46f99a7/AJXm1FnhC8.json" background="transparent"
-                speed="1" loop autoplay id="house" data-aos-anchor="#foreground"
-                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
-                data-aos-delay="300">
+                speed="1" loop autoplay id="house">
             </lottie-player>
-            <img class="layer-intro" src="assets/img/Bush.png" alt="" id="bush" data-aos-anchor="#foreground"
-                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="slide-up"
-                data-aos-delay="100">
-            <img class="layer-intro" src="assets/img/People.png" alt="" id="foreground" data-aos-easing="ease-out"
-                data-aos-duration="1300" data-aos-anchor-placement="bottom-bottom">
+            <img class="layer-intro" src="assets/img/Bush.png" alt="" id="bush">
+            <img class="layer-intro" src="assets/img/People.png" alt="" id="foreground">
             <lottie-player class="title-animation"
                 src="https://lottie.host/5f11a04e-f72f-43c0-8f08-81b371dc4e9d/t7G7F6Toev.json" background="transparent"
-                speed="1" loop autoplay id="house" data-aos-anchor="#foreground"
-                data-aos-anchor-placement="bottom-bottom" data-aos-easing="ease-out" data-aos="zoom-out"
-                data-aos-delay="1200" data-aos-duration="1500">
+                speed="1" loop autoplay id="title">
             </lottie-player>
         </div>
 
@@ -352,6 +338,13 @@
 
     <script>
         gsap.registerPlugin(ScrollTrigger);
+
+        var tl = gsap.timeline();
+        tl.from('#foreground', { opacity: 0, duration: 0.5 });
+        tl.from('#bush', { y: '200px', duration: 0.3 }, ">-=0.1");
+        tl.from(['#layer1', '#layer2', '#house'], { y: '300px', duration: 0.3 }, ">-=0.1");
+        tl.from('#mountain', { y: '700px', duration: 0.3 }, ">-=0.1");
+        tl.from(['#sun', '#title'], { opacity: 0, duration: 0.5 });
 
         var tl = gsap.timeline({
             scrollTrigger: { trigger: '#leading-section-title', start: 'top 95%', end: 'top 95%', toggleActions: 'play none reverse none' },
