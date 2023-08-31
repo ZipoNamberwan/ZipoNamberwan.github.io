@@ -114,12 +114,6 @@ body {
     color: #1D3557;
 }
 
-.section-2 {
-    background-color: #F1FAEE;
-    position: relative;
-    height: auto;
-}
-
 .section-2-question {
     background-color: #E0FDFF;
     position: relative;
@@ -273,4 +267,39 @@ body {
 .section-3 {
     background-color: #E0FDFF;
     position: relative;
+}
+
+.section-7 {
+    background-color: #F1FAEE;
+    position: relative;
+    height: auto;
+}
+
+.section-7-question {
+    background-color: #E0FDFF;
+    position: relative;
+    height: 100vh;
+    top: 0;
+
+}
+
+.section-7-question>.container {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section-7-background {
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-7 {
+    width: 150px;
+    height: 100vh;
 }

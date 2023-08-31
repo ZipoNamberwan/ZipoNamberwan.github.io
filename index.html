@@ -116,9 +116,14 @@
             </div>
         </div>
 
-        <div class="section-2 p-3">
+        <div class="section-7-question">
+            <div class="box-7"></div>
+            <lottie-player class="section-7-background"
+                src="https://lottie.host/0a31c732-9521-42de-ba5b-7de25c8c60f5/SpQOrwCFSg.json" background="transparent"
+                speed="2" loop autoplay>
+            </lottie-player>
             <div class="container mt-3">
-                <div>
+                <div class="first-sentence" id="hook-question-7git ">
                     <div class="mb-3 mt-3">
                         <img width="20%" src="assets/img/Line-Acc.png" alt="">
                     </div>
@@ -135,14 +140,14 @@
                             style="color: #1D3557;font-weight: 800;">1,3 juta orang</span>. Berikut
                         perbandingan jumlah rumah tangga miskin ekstrem menurut sektor</p>
                 </div>
-                <div class="chart" style="position: relative; height:60vh; width:60vw">
+                <!-- <div class="chart" style="position: relative; height:60vh; width:60vw">
                     <canvas id="myChart"></canvas>
                 </div>
                 <div>
                     <p class="description">Hal ini membuat sektor pertanian menjadi sektor yang paling rentan masuk ke
                         dalam
                         jebakan miskin ekstrem</p>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -419,6 +424,43 @@
                 opacity: 0, duration: duration, stagger: 0.5
             },
         );
+
+
+
+
+
+        var duration = 10;
+        var splitQuestion = new SplitType("#hook-question-7", { type: "words" });
+        var tl = gsap.timeline({
+            scrollTrigger: {
+                trigger: splitQuestion.words,
+                start: "center center",
+                end: "+=2500",
+                scrub: 1,
+                markers: true
+            },
+        });
+
+        tl.fromTo("#hook-question-7", { opacity: 0, duration: 1, padding: '20px', borderRadius: '15px', backgroundColor: 'transparent' },
+            { opacity: 1, duration: 5, backgroundColor: '#FFFFFF' });
+
+        tl.from(".first-sentence", { opacity: 0, duration: 10000 });
+
+        gsap.from(
+            '.box-7',
+            {
+                scrollTrigger: {
+                    trigger: ".box-7",
+                    start: "top top",
+                    end: "+=2500",
+                    scrub: 1,
+                    pin: '.section-7-question',
+                },
+                opacity: 0, duration: duration, stagger: 0.5
+            },
+        );
+
+
 
 
         var duration = 10;
