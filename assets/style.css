@@ -50,6 +50,11 @@ body {
     background-color: #FFFFFF;
 }
 
+.section-2-continue {
+    position: relative;
+    background-color: #FFFFFF;
+}
+
 .leading-section-title-0-persen {
     /* background-color: #F1FAEE;
     color: #1D3557;
@@ -110,9 +115,13 @@ body {
 }
 
 .section-2 {
+    /* position: absolute;
+    top: 0; */
     position: relative;
     z-index: 3;
     background-color: #FFFFFF;
+    /* left: 50%;
+    transform: translate(-50%, 0); */
 }
 
 .section-2-question {
@@ -120,7 +129,7 @@ body {
     position: relative;
     height: 100vh;
     top: 0;
-
+    display: flex;
 }
 
 .section-2-question>.container {
@@ -223,6 +232,46 @@ body {
 }
 
 .circle-light-blue {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #457B9D;
+}
+
+.rect-red {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #E63946;
+}
+
+.rect-white-2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #F1FAEE;
+}
+
+.rect-dark-blue {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #1D3557;
+}
+
+.rect-white {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: #E0FDFF;
+}
+
+.rect-light-blue {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -491,8 +540,6 @@ body {
     padding: 15px;
     margin-bottom: 30px;
     position: relative;
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 
 #province-name {
