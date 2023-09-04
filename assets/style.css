@@ -311,11 +311,7 @@ body {
     background-color: #E0FDFF;
     position: absolute;
     top: 0;
-}
-
-.section-3 {
-    background-color: #E0FDFF;
-    position: relative;
+    height: 100vh;
 }
 
 .section-7 {
@@ -551,5 +547,28 @@ body {
     border: 3px solid rgb(245, 128, 128);
     padding: 0px 5px;
     font-size: 1.5rem;
+}
 
+.poverty-profile {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.section-3-box {
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+
+    margin: 0;
+    position: absolute;
+    background-color: #E0FDFF;
+    padding: 20px;
+    border-radius: 10px;
+    border: 8px solid #1D3557 !important;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    color: #1D3557;
 }
