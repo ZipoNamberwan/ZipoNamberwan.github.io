@@ -45,6 +45,35 @@ body {
     position: absolute;
 }
 
+.title>h2 {
+    font-weight: 900;
+    font-size: 3rem;
+    color: #1D3557;
+    line-height: 1.5;
+}
+
+.title-style-1 {
+    color: #fff9fa;
+    background-color: #1D3557;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    filter: drop-shadow(3px 3px 2px #1D3557);
+}
+
+.title-style-2 {
+    color: #fff9fa;
+    background-color: #E63946;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 7px;
+    padding-right: 7px;
+    filter: drop-shadow(3px 3px 2px #1D3557);
+}
+
 .leading-section {
     position: relative;
     background-color: #FFFFFF;

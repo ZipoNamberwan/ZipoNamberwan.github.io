@@ -17,21 +17,26 @@
         <div class="intro-page">
             <lottie-player class="layer-intro"
                 src="https://lottie.host/132d5051-1f53-4edf-912b-e8856f9a68a7/0aeeEhMjre.json" background="transparent"
-                speed="1" loop autoplay id="sun">
+                speed="1" loop autoplay id="sun" data-speed=".55">
             </lottie-player>
-            <img class="layer-intro" src="assets/img/Mountain.png" alt="" id="mountain">
-            <img class="layer-intro" src="assets/img/Layer 2.png" alt="" id="layer2">
-            <img class="layer-intro" src="assets/img/Layer 1.png" alt="" id="layer1">
+            <img class="layer-intro" src="assets/img/Mountain.png" alt="" id="mountain" data-speed=".45">
+            <img class="layer-intro" src="assets/img/Layer 2.png" alt="" id="layer2" data-speed=".35">
+            <img class="layer-intro" src="assets/img/Layer 1.png" alt="" id="layer1" data-speed=".15">
             <lottie-player class="layer-intro"
                 src="https://lottie.host/222ef5cc-e87d-4f00-93a9-699cf46f99a7/AJXm1FnhC8.json" background="transparent"
-                speed="1" loop autoplay id="house">
+                speed="1" loop autoplay id="house" data-speed=".35">
             </lottie-player>
             <img class="layer-intro" src="assets/img/Bush.png" alt="" id="bush">
             <img class="layer-intro" src="assets/img/People.png" alt="" id="foreground">
-            <lottie-player class="title-animation"
+            <div class="title text-center" id="title">
+                <h2><span class="title-style-1">Selamatkan Bejo dan Tejo</span></h2>
+                <h2><span style="filter: drop-shadow(3px 3px 2px #FFFFFF)">Petani yang Terancam</span> <span
+                        class="title-style-2">Kemiskinan Ekstrem</span></h2>
+            </div>
+            <!-- <lottie-player class="title-animation"
                 src="https://lottie.host/5f11a04e-f72f-43c0-8f08-81b371dc4e9d/t7G7F6Toev.json" background="transparent"
                 speed="1" loop autoplay id="title">
-            </lottie-player>
+            </lottie-player> -->
         </div>
 
         <div class="divider-section">
@@ -16145,6 +16150,22 @@
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
+        var tl = gsap.timeline({ repeat: -1 });
+        tl.to("#title", {
+            scale: 1.1, duration: 3, ease: "power1.out"
+        });
+        tl.to("#title", {
+            scale: 1.00, duration: 3, ease: "power1.in"
+        });
+
+        gsap.to(".layer-intro", {
+            scrollTrigger: {
+                scrub: true
+            },
+            y: (i, target) => -ScrollTrigger.maxScroll(window) * -(target.dataset.speed),
+            ease: "none"
+        });
+
         var tl = gsap.timeline();
         tl.from('#foreground', { opacity: 0, duration: 0.5 });
         tl.from('#bush', { y: '200px', duration: 0.3 }, ">-=0.1");
@@ -16469,27 +16490,6 @@
 
     </script>
 
-    <script>
-        let stars = document.getElementById('stars')
-        let mountain = document.getElementById('mountain')
-        let layer2 = document.getElementById('layer2')
-        let layer1 = document.getElementById('layer1')
-        let bush = document.getElementById('bush')
-        let foreground = document.getElementById('foreground')
-        let sun = document.getElementById('sun')
-        let house = document.getElementById('house')
-
-        window.addEventListener('scroll', function () {
-            let value = window.scrollY
-            sun.style.bottom = value * -0.65 + 'px'
-            mountain.style.bottom = value * -0.55 + 'px'
-            layer2.style.bottom = value * -0.35 + 'px'
-            house.style.bottom = value * -0.35 + 'px'
-            layer1.style.bottom = value * -0.25 + 'px'
-            bush.style.bottom = value * -0.20 + 'px'
-            foreground.style.bottom = value * -0.15 + 'px'
-        })
-    </script>
     <script>
         function responsiveFonts() {
             if (window.outerWidth > 999) {
