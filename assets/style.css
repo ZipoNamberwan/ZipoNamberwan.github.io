@@ -5,6 +5,23 @@ body {
     font-family: 'Roboto';
 }
 
+.loading {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #1D3557;
+    z-index: 99;
+}
+
+.loading-lottie {
+    position: absolute;
+    width: 30%;
+    height: 30%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .wrapper {
     height: 100vh;
 }
@@ -223,6 +240,15 @@ body {
     object-fit: cover;
 }
 
+.section-3-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
 .box-5 {
     width: 150px;
     height: 100vh;
@@ -337,7 +363,7 @@ body {
 }
 
 .section-3 {
-    background-color: #E0FDFF;
+    background-color: #FFFFFF;
     position: absolute;
     top: 0;
     height: 100vh;
@@ -600,4 +626,11 @@ body {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     color: #1D3557;
+}
+
+.section-3-chat-box {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 30%;
 }
