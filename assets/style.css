@@ -664,7 +664,8 @@ body {
 
 .section-4 {
     height: 100vh;
-    position: relative;
+    position: sticky;
+    top: 0;
     background-image: url('img/Background 4.png');
     background-size: cover;
     /* background-color: #45B6FF; */
@@ -782,7 +783,7 @@ body {
     font-weight: 900;
 }
 
-.section-4-facts-clue{
+.section-4-facts-clue {
     position: absolute;
     top: 45%;
     transform: translate(0, -45%);
@@ -790,4 +791,200 @@ body {
     transform: translate(-50%, 0);
     background-color: #E0FDFF;
     padding: 5px;
+}
+
+.section-9 {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #E0FDFF;
+    box-shadow: 0 -10px 14px 0 rgba(0, 0, 0, 0.2), 0 -6px 14px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.box-9 {
+    width: 150px;
+    height: 100vh;
+}
+
+.section-9-sun {
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section-9-stars {
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    pointer-events: none;
+    height: auto !important;
+}
+
+.section-9-moon {
+    object-fit: contain;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    transform: translate(20%, -20%);
+}
+
+.section-9-container {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.section-9-background {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.section-9-foreground {
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%, 0%);
+}
+
+.section-9-livestock {
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    transform: translate(-10%, 0%);
+}
+
+.section-9-food {
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+    transform: translate(15%, 0%);
+}
+
+.section-9-floor {
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+}
+
+.section-9-overlay {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+}
+
+.section-9-sky-night {
+    background-color: #1D3557;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+
+.section-9-sky-day {
+    background-image: linear-gradient(#45B6FF, #E0FDFF, #FFFFFF);
+    ;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+}
+
+.section-9-cloud-1 {
+    object-fit: contain;
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    transform: translate(-10%, 0%);
+}
+
+.section-9-cloud-2 {
+    object-fit: contain;
+    position: absolute;
+    top: 5%;
+    right: 20%;
+    transform: translate(-20%, 5%);
+}
+
+.section-9-cloud-3 {
+    object-fit: contain;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    transform: translate(-10%, 20%);
+}
+
+.section-9-char-1 {
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    transform: translate(-30%, -20%);
+    color: #1D3557;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.section-9-char-2 {
+    position: absolute;
+    bottom: 20%;
+    right: 30%;
+    transform: translate(30%, -20%);
+    color: #1D3557;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.section-9-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: #1D3557;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.section-10 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #1D3557;
+}
+
+.section-10-img {
+    object-fit: cover;
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+.section-10-text {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: #1D3557;
+    background-color: #FFFFFF;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.footer{
+    background-color: #E0FDFF;
+    position: relative;
 }
