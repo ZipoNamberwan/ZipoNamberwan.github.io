@@ -985,6 +985,13 @@ body {
 }
 
 .footer{
-    background-color: #E0FDFF;
+    background-color: #E63946;
     position: relative;
+    height: 50vh;
+    width: 100vw;
+}
+
+.section-10-divider{
+    position: absolute;
+    bottom: 0;
 }
