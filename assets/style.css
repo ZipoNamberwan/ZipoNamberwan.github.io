@@ -812,6 +812,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
 }
 
 .section-9-stars {
@@ -821,6 +822,7 @@ body {
     width: 100%;
     pointer-events: none;
     height: auto !important;
+    opacity: 0;
 }
 
 .section-9-moon {
@@ -856,8 +858,8 @@ body {
     object-fit: contain;
     position: absolute;
     bottom: 0;
-    left: 10%;
-    transform: translate(-10%, 0%);
+    left: 0%;
+    transform: translate(0%, 0%);
 }
 
 .section-9-food {
