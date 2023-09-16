@@ -15472,21 +15472,21 @@
                         menemukan
                         tombol <img width="30px" height="30px" src="assets/img/Info.png" alt=""></h3>
                 </div>
-                <div class="section-3-box section-3-house">
+                <div class="section-3-box text-center section-3-house">
                     <h2>Petani berpendidikan rendah, beresiko 1,5 kali untuk menjadi miskin ekstrem dibandingkan
                         yang
                         berpendidikan tinggi
                     </h2>
                 </div>
-                <div class="section-3-box section-3-land">
+                <div class="section-3-box text-center section-3-land">
                     <h2>Petani di desa, 2 kali lebih beresiko untuk menjadi miskin ekstrem dibandingkan yang di
                         kota.
                     </h2>
                 </div>
-                <div class="section-3-box section-3-animals">
+                <div class="section-3-box text-center section-3-animals">
                     <h2>Animals</h2>
                 </div>
-                <div class="section-3-box section-3-food">
+                <div class="section-3-box text-center section-3-food">
                     <h2>Food</h2>
                 </div>
             </div>
@@ -15655,7 +15655,7 @@
                         <div class="section-9-sky-day"></div>
                         <lottie-player class="section-9-stars"
                             src="https://lottie.host/bebf24c6-8ff2-4169-84f5-e13c817300cb/mLVMEluAzN.json"
-                            background="transparent" speed="1" loop autoplay id="sun" data-speed="10">
+                            background="transparent" speed="2" loop autoplay id="sun" data-speed="10">
                         </lottie-player>
                         <img class="section-9-cloud-1" height="20%" width="20%" src="assets/img/Cloud 1.png" alt="">
                         <img class="section-9-cloud-2" height="10%" width="10%" src="assets/img/Cloud 3.png" alt="">
@@ -16195,15 +16195,15 @@
         var tl = gsap.timeline({
             repeat: -1, yoyo: true
         });
-        tl.from(".section-9-cloud-1", { x: "-300px", duration: 7 });
+        tl.from(".section-9-cloud-1", { x: "-50px", duration: 3 });
         var tl = gsap.timeline({
             repeat: -1, yoyo: true
         });
-        tl.from(".section-9-cloud-2", { x: "250px", duration: 10 });
+        tl.from(".section-9-cloud-2", { x: "80px", duration: 4 });
         var tl = gsap.timeline({
             repeat: -1, yoyo: true
         });
-        tl.from(".section-9-cloud-3", { x: "-100px", duration: 8 });
+        tl.from(".section-9-cloud-3", { x: "-60px", duration: 2 });
 
         var splitQuestions = [];
         var uniqueWords = [
@@ -16279,13 +16279,13 @@
             } else if (i == nightSeq) {
                 tl.fromTo(".section-9-sky-night", { backgroundColor: "#E0FDFF", duration: duration }, { backgroundColor: "#1D3557", duration: duration }, "<");
                 tl.fromTo(".section-9-sky-day", { opacity: 1, duration: duration }, { opacity: 0, duration: duration }, "<");
-                tl.fromTo(".section-9-sun", { y: "0%", duration: duration }, { y: "80%", duration: duration }, "<");
-                tl.fromTo(".section-9-moon", { y: "300%", duration: duration }, { y: "0%", duration: duration }, "<");
+                tl.fromTo(".section-9-sun", { y: "0%", duration: duration }, { y: "80%", opacity: 0, duration: duration }, "<");
+                tl.fromTo(".section-9-moon", { y: "300%", duration: duration }, { y: "0%", opacity: 1, duration: duration }, "<");
                 tl.fromTo(".section-9-stars", { opacity: 0, duration: duration }, { opacity: 1, duration: duration }, "<");
                 tl.fromTo(".section-9-overlay", { opacity: 0, duration: 50 }, { opacity: 0.4, duration: 100 }, "<");
-                tl.to(".section-9-cloud-1", { x: "-1000px", opacity: 0, duration: 100 }, "<");
-                tl.to(".section-9-cloud-2", { x: "1000px", opacity: 0, duration: 100 }, "<");
-                tl.to(".section-9-cloud-3", { x: "1000px", opacity: 0, duration: 100 }, "<");
+                tl.to(".section-9-cloud-1", { x: "-60px", opacity: 0, duration: 100 }, "<");
+                tl.to(".section-9-cloud-2", { x: "60px", opacity: 0, duration: 100 }, "<");
+                tl.to(".section-9-cloud-3", { x: "60px", opacity: 0, duration: 100 }, "<");
             } else if (i == char1Seq) {
                 tl.fromTo(".section-9-char-1", { opacity: 0, duration: duration }, { opacity: 1, duration: duration }, "<");
             } else if (i == char2Seq) {
