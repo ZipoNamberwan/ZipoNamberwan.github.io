@@ -122,7 +122,7 @@ body {
     .name-container {
         position: absolute;
         /* or 'fixed' if you want it to stay in place on scroll */
-        bottom: 10%;
+        bottom: 20%;
         left: 50%;
         transform: translate(-50%, 0);
         /* Centers the image horizontally */
